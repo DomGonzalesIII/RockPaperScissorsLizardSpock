@@ -15,12 +15,8 @@ h1 {
   color: #fcbf1e;
   font-family: 'Rambla', sans-serif;
   font-size: 4.5rem;
-  text-shadow: 4px 2px #363636;
   margin-top: 30px;
-}
-
-label {
-  font-size: 1rem;
+  text-shadow: 4px 2px #363636;
 }
 
 /************************ CLASS SELECTORS ************************/
@@ -31,6 +27,21 @@ label {
 .fitText {
   font-size: 1rem        !important;
   margin-top: 5px        !important;
+}
+
+.info {
+  background: black;
+  border-radius: 14px;
+  color: #fff;
+  left: 0;
+  margin: 0 auto;
+  opacity: 75%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 59%;     /* Adjust to move up and down */
+  width: 90%;   /* Adjust to set width        */
+  z-index: 999;
 }
 
 .result {
@@ -47,27 +58,16 @@ label {
 
 /************************* ID SELECTORS *************************/
 #label {
-  background: black;
-  border-radius: 14px;
-  color: #fff;
   cursor: pointer;
-  left: 0;
-  margin: 0 auto;
-  opacity: 75%;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 59%;     /* Adjust to move up and down */
-  width: 90%;   /* Adjust to set width        */
-  z-index: 999;
 }
 
-#ltext {
+#ltext, #ntext {
   margin: 0 15px;
 }
 
 #nomad {
   color: #c70039;
+  position: relative;
 }
 
 #player {
@@ -76,8 +76,8 @@ label {
 
 #playerBtn {
   background-color: inherit;
-  background-image: url('img/white.png');
-  background-size: 200px 180px;
+  background-image: url('img/default.png');
+  background-size: 200px 200px;
   border: none;
   border-radius: 14px;
   cursor: pointer;

@@ -18,6 +18,10 @@ document.querySelector('#label').addEventListener('click', updateChoice);
 // updates player's btn background image and sets their choice
 function updateChoice() {
 
+  // clear results
+  document.querySelector('#result').innerHTML = '';
+  document.querySelector('#why').innerHTML = '';
+
   // update choice
   if (choice === 4) {
     choice = 0;
@@ -61,6 +65,9 @@ function genNomadChoice() {
 
   // set nomad's image
   document.querySelector('#nomPic').src = nomadImg;
+
+  // update label text
+  document.querySelector('#ntext').innerHTML = choices[nomadChoice];
 
 }
 
