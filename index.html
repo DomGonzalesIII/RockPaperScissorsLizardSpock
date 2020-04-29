@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+  <title>RPSLS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rambla&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
+
+    <div class="throws">
+
+      <div class="trio" id="player">
+        <p>You</p>
+        <button type="button" name="btn" id="playerBtn"></button>
+
+        <div id="label">
+          <p id="ltext">Choose</p>
+        </div>
+      </div>
+
+      <div class="trio" id="vs">
+        <p class="result" id="result">.</p>
+        <p class="result" id="why">.</p>
+        <img src="img/versus.png" alt="VS" height="100px" width="100px">
+      </div>
+
+      <div class="trio" id="nomad">
+        <p>Nomad</p>
+        <img src="img/default.png" alt="Nomad's Throw"  id="nomPic" height="200px" width="200px">
+      </div>
+
+    </div>
+
+    <button id="shoot">Throw Down!</button>
+  </div>
+
+  <footer>domTheDev</footer>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

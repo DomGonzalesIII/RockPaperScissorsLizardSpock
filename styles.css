@@ -1,0 +1,134 @@
+/*csslint empty-rules: false, ids: false, qualified-headings: false, known-properties: false, important: false*/
+/************************* TAG SELECTORS *************************/
+body {
+  background-color: #4d3e3e;
+  color: #035aa6;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+footer {
+  color: #fcbf1e;
+}
+
+h1 {
+  color: #fcbf1e;
+  font-family: 'Rambla', sans-serif;
+  font-size: 4.5rem;
+  text-shadow: 4px 2px #363636;
+  margin-top: 30px;
+}
+
+label {
+  font-size: 1rem;
+}
+
+/************************ CLASS SELECTORS ************************/
+/* Decided to use important for two reasons:
+   1. No one else will likely ever maintain this code so only I care
+   2. I want these sections alphabetically sorted and to ensure that
+      the fitText styles are not overwritten                        */
+.fitText {
+  font-size: 1rem        !important;
+  margin-top: 5px        !important;
+}
+
+.result {
+  font-size: 1.2rem;
+}
+
+.trio {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-shadow: 2px 1px #363636;
+  width: 200px;
+}
+
+/************************* ID SELECTORS *************************/
+#label {
+  background: black;
+  border-radius: 14px;
+  color: #fff;
+  cursor: pointer;
+  left: 0;
+  margin: 0 auto;
+  opacity: 75%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 59%;     /* Adjust to move up and down */
+  width: 90%;   /* Adjust to set width        */
+  z-index: 999;
+}
+
+#ltext {
+  margin: 0 15px;
+}
+
+#nomad {
+  color: #c70039;
+}
+
+#player {
+  position: relative;
+}
+
+#playerBtn {
+  background-color: inherit;
+  background-image: url('img/white.png');
+  background-size: 200px 180px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: inline-block;
+  height: 200px;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 200px;
+}
+
+#result {
+  color: #4d3e3e;
+  margin-bottom: 0;
+  margin-top: 26px;    /* adjust this and #vs img padding to correct #vs content alignment*/
+}
+
+#shoot {
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+  box-shadow: 0 1px 0 0 #1c1b18;
+  color:#505739;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size:14px;
+	font-weight:bold;
+  margin-bottom: 50px;
+  padding:12px 16px;
+  text-decoration: none;
+  text-shadow:0 1px 0 #ffffff;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#shoot:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+
+#vs img {
+  padding: 50px 0;
+}
+
+#why {
+  color: #4d3e3e;
+  margin-bottom: 27px;
+  margin-top: 0;
+}
