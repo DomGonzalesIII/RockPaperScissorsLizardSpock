@@ -52,8 +52,12 @@ var nomadImg = '';
 
 // add click event listeners to shoot button
 document.querySelector('#shoot').addEventListener('click', function () {
-  genNomadChoice();
-  winner();
+
+  // user must first make a choice before playing
+  if (document.querySelector('#ltext').innerHTML !== 'Choose') {
+    genNomadChoice();
+    winner();
+  }
 });
 
 // generates random throw for nomad and updates his image
