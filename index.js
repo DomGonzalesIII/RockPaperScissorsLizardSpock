@@ -18,9 +18,11 @@ document.querySelector('#label').addEventListener('click', updateChoice);
 // updates player's btn background image and sets their choice
 function updateChoice() {
 
-  // clear results
+  // clear results and nomads picture/text
   document.querySelector('#result').innerHTML = '';
   document.querySelector('#why').innerHTML = '';
+  document.querySelector('#nomPic').src = 'img/default.png';
+  document.querySelector('#ntext').innerHTML = '???';
 
   // update choice
   if (choice === 4) {
