@@ -20,15 +20,6 @@ h1 {
 }
 
 /************************ CLASS SELECTORS ************************/
-/* Decided to use important for two reasons:
-   1. No one else will likely ever maintain this code so only I care
-   2. I want these sections alphabetically sorted and to ensure that
-      the fitText styles are not overwritten                        */
-.fitText {
-  font-size: 1rem        !important;
-  margin-top: 5px        !important;
-}
-
 .info {
   background: black;
   border-radius: 14px;
@@ -42,6 +33,15 @@ h1 {
   top: 59%;     /* Adjust to move up and down */
   width: 90%;   /* Adjust to set width        */
   z-index: 999;
+}
+
+/* Decided to use important for two reasons:
+   1. No one else will likely ever maintain this code so only I care
+   2. I want these sections alphabetically sorted and to ensure that
+      the fitText styles are not overwritten                        */
+.js-fitText {
+  font-size: 1rem        !important;
+  margin-top: 5px        !important;
 }
 
 .result {
