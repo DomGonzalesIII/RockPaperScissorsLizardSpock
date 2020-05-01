@@ -36,7 +36,6 @@ function updateChoice() {
 
   // set playerBtn's background image
   document.querySelector('#playerBtn').style.backgroundImage = playerImg;
-  document.querySelector('#playerBtn').style.backgroundSize = '200px 200px';
 
   // update label text
   document.querySelector('#ltext').innerHTML = choices[choice];
@@ -44,7 +43,7 @@ function updateChoice() {
 }
 
 /*****************          step 2           *****************
-user clicks "Throw Down" button, triggers nomads choice to be made/displayed */
+user clicks "Throw Down" button, triggering nomads choice to be made/displayed */
 
 // variables
 var nomadChoice = 0;
@@ -53,10 +52,17 @@ var nomadImg = '';
 // add click event listeners to shoot button
 document.querySelector('#shoot').addEventListener('click', function () {
 
-  // user must first make a choice before playing
-  if (document.querySelector('#ltext').innerHTML !== 'Choose') {
+  // user must have made a choice before play begins
+  if (document.querySelector('#ltext').innerHTML === 'Choose') {
+
+    document.querySelector('#result').innerHTML = 'Please make';
+    document.querySelector('#why').innerHTML = 'a selection';
+
+  } else {
+
     genNomadChoice();
     winner();
+
   }
 });
 
@@ -223,8 +229,5 @@ function winner() {
     default: console.log('Error with choice values');
 
   }
-
-  document.querySelector('#result').style.color = '#fcbf1e';
-  document.querySelector('#why').style.color = '#fcbf1e';
 
 }
