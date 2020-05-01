@@ -8,11 +8,11 @@ body {
 }
 
 footer {
-  color: #fcbf1e;
+  color: #E5BE78;
 }
 
 h1 {
-  color: #fcbf1e;
+  color: #E5BE78;
   font-family: 'Rambla', sans-serif;
   font-size: 4.5rem;
   margin-top: 30px;
@@ -70,6 +70,10 @@ h1 {
   position: relative;
 }
 
+#nomPic {
+  opacity: 85%;
+}
+
 #player {
   position: relative;
 }
@@ -83,6 +87,7 @@ h1 {
   cursor: pointer;
   display: inline-block;
   height: 200px;
+  opacity: 85%;
   transition: background 250ms ease-in-out,
               transform 150ms ease;
   -webkit-appearance: none;
@@ -91,7 +96,7 @@ h1 {
 }
 
 #result {
-  color: #4d3e3e;
+  color: #E5BE78;
   margin-bottom: 0;
   margin-top: 26px;    /* adjust this and #vs img padding to correct #vs content alignment*/
 }
@@ -124,11 +129,12 @@ h1 {
 }
 
 #vs img {
+  opacity: 75%;
   padding: 50px 0;
 }
 
 #why {
-  color: #4d3e3e;
+  color: #E5BE78;
   margin-bottom: 27px;
   margin-top: 0;
 }
